@@ -1,6 +1,6 @@
-NAME = ex01
+NAME = ex02
 
-SRCS =  main.cpp Span.cpp
+SRCS =  main.cpp 
 
 CC = c++
 
@@ -10,7 +10,7 @@ OBJS = $(SRCS:.cpp=.o)
 
 all: $(NAME)
 
-%.o: %.cpp Span.hpp
+%.o: %.cpp MutanStack.hpp
 	$(CC) $(FLAGS)  -c $< -o $@
 
 $(NAME): $(OBJS) 
